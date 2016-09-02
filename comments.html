@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sedona</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__logo">
+      <img src="#" alt="Логотип Седоны" width="102" height="83">
+    </div>
+    <nav class="main-nav  main-nav--closed">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photos.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="comments.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="http://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-header__banner">
+      <img src="#" alt="Welcome to Sedona" width="320" height="160">
+    </div>
+  </header>
+  <main>
+    <div class="page-title">
+      <h1 class="page-title__title">Оставьте свой отзыв</h1>
+      <p class="page-title__dscr">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+    <form class="comment-form" action="" method="">
+      <div class="comment-form__item">
+        <h2 class="comment-form__title">Представьтесь, пожалуйста:</h2>
+        <label for="first-name">Имя:</label>
+        <input type="text" name="first-name" value="Петр" id="first-name">
+        <label for="last-name">Фамилия:</label>
+        <input type="text" name="last-name" value="Иванов" id="last-name">
+        <label for="middle-name">Отчество:</label>
+        <input type="text" name="middle-name" value="Александрович" id="middle-name">
+      </div>
+      <div class="comment-form__item">
+        <h2 class="comment-form__title">Контактная информация:</h2>
+        <label for="phone">Контактный телефон:</label>
+        <input type="tel" name="phone" value="Введите телефон" id="phone">
+        <label for="e-mail">Электронная почта:</label>
+        <input type="email" name="e-mail" value="Введите e-mail" id="e-mail">
+      </div>
+      <div class="comment-form__item">
+        <h2 class="comment-form__title">Ваше общее впечатление:</h2>
+        <input type="radio" id="radio1" name="impression" value="radio1" checked><label for="radio1">Скорее положительное</label>
+        <input type="radio" id="radio2" name="impression" value="radio2"><label for="radio2">Скорее отрицательное</label>
+        <input type="radio" id="radio3" name="impression" value="radio3"><label for="radio3">Затрудняюсь ответить</label>
+      </div>
+      <div class="comment-form__item">
+        <h2 class="comment-form__title">Посещенные достопримечательности:</h2>
+        <input type="checkbox" id="check1" checked><label for="check1">Мост Дьявола</label>
+        <input type="checkbox" id="check2" checked><label for="check2">Слайд-парк</label>
+        <input type="checkbox" id="check3"><label for="check3">Гора-Колокол</label>
+        <input type="checkbox" id="check4" checked><label for="check4">Красные скалы</label>
+      </div>
+      <div class="comment-form__item">
+        <h2 class="comment-form__title">Опишите свои эмоции:</h2>
+        <textarea name="name" rows="8" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__tagline">
+      <h2>#visitsedona</h2>
+    </div>
+    <div class="page-footer__social">
+      <span class="social-links">
+        <a class="social-link  social-link--tw" href="https://vk.com/htmlacademy">Мы в Твитере</a>
+        <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social-link  social-link--yt" href="https://www.instagram.com/htmlacademy">Мы в YouTube</a>
+      </span>
+    </div>
+    <div class="page-footer__copyright">
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано:</a>
+    </div>
+  </footer>
+</body>
+</html>
