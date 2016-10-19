@@ -1,0 +1,64 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  padding: 21px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.form__field {
+  display: flex;
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.form__title {
+  @include h-font;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__label {
+  margin-right: 19px;
+  padding-top: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  &--tel,
+  &--email {
+    padding: 15px 22px;
+  }
+}
+
+.form__input {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  padding: 16px;
+  width: 150px;
+
+  color: $form-input-text;
+  background-color: $form-input-bg;
+
+  border: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  &::placeholder {
+    color: $form-input-text;
+  }
+
+  &--tel,
+  &--email {
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+@mixin h-font() {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+@mixin container {
+	width: auto;
+
+	@media #{$tablet-widths} {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	@media #{$desktop-widths} {
+    width: 1200px;
+		box-shadow: 0 -7px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+}

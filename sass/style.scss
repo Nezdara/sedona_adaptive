@@ -1,0 +1,21 @@
+@import "normalize.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "global-settings.scss";
+
+@import "global/fonts.scss";
+
+@import "blocks/site-wrapper.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/logo.scss";
+@import "blocks/banner.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-title.scss";
+@import "blocks/reasons.scss";
+@import "blocks/promo.scss";
+@import "blocks/hotel-search.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+
+@import "blocks/form.scss";

@@ -1,0 +1,61 @@
+.page-title {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 38px;
+  padding-bottom: 18px;
+  position: relative;
+
+  text-align: center;
+}
+
+@media #{$mobile-widths-only} {
+  .page-title--triangle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 26px;
+    background-image: url("../img/bg-triangle.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .page-title {
+    padding-left: 138px;
+    padding-right: 138px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .page-title {
+    padding-left: 355px;
+    padding-right: 355px;
+  }
+}
+
+.page-title__title {
+  margin: 0 0 28px;
+
+  @include h-font;
+  text-transform: uppercase;
+
+  @media #{$tablet-widths} {
+    font-size: 21px;
+  }
+}
+
+.page-title__dscr {
+  margin: 0 0 25px;
+
+  line-height: 26px;
+  text-transform: uppercase;
+}
