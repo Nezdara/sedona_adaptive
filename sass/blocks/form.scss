@@ -75,6 +75,17 @@
   }
 }
 
+@media #{$desktop-widths} {
+  .form__item {
+
+    &--contacts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
 .form__field {
   display: flex;
 
@@ -128,7 +139,8 @@
 
     &--tel,
     &--email {
-      width: 315px;
+      width: auto;
+      flex-wrap: nowrap;
     }
 
     &--check {
@@ -136,6 +148,9 @@
       margin-left: 0;
     }
 
+    &--contacts {
+      width: 100%;
+    }
   }
 }
 
@@ -161,6 +176,15 @@
   }
 }
 
+@media #{$desktop-widths} {
+  .form__title {
+
+    &--contacts {
+      margin-bottom: 60px;
+    }
+  }
+}
+
 .form__label {
   margin-right: 19px;
   padding: 16px 0;
@@ -173,10 +197,6 @@
     margin-right: 0;
     position: relative;
     width: 100%;
-
-    @media #{$desktop-widths} {
-      padding-left: 0;
-    }
   }
 
   &--tel::after {
@@ -216,6 +236,28 @@
     text-transform: none;
     @include h-font;
   }
+}
+
+@media #{$desktop-widths} {
+  .form__label {
+
+    &--tel,
+    &--email {
+      padding-left: 0;
+      width: auto;
+    }
+
+    &--tel::after {
+      top: 0;
+      right: -315px;
+    }
+
+    &--email::after {
+      top: 0;
+      right: -315px;
+    }
+  }
+
 }
 
 .form__input {
@@ -258,10 +300,6 @@
   &--tel,
   &--email {
     width: 100%;
-
-    @media #{$desktop-widths} {
-      width: auto;
-    }
   }
 
   &--email {
@@ -272,6 +310,20 @@
 
     .form__error{
       display: block;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .form__input {
+
+    &--tel,
+    &--email {
+      width: 315px;
+    }
+
+    &--email {
+      margin-bottom: 20px;
     }
   }
 }
