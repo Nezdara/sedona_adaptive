@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Личный проект «Седона» от HTML Academy",
   "author": "Андрей Пугач",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nezdara/sedona_adaptive.git"

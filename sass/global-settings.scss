@@ -14,3 +14,13 @@ body {
 img {
   max-width: 100%;
 }
+
+.hidden-mobile {
+  display: none;
+}
+
+@media #{$tablet-widths} {
+  .hidden-mobile {
+    display: inline;
+  }
+}

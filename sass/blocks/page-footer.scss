@@ -28,7 +28,39 @@
   margin: 0;
 }
 
+.page-footer__social {
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  font-size: 0;
+  width: 46px;
+  height: 48px;
+  fill: #ffffff;
+  background-color: $social-link-bg;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $social-link-bg-hover;
+  }
+
+  &:active {
+    background-color: $social-link-bg-active;
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
 .page-footer__copyright {
+  display: flex;
+  align-items: center;
   padding-bottom: 23px;
   padding-top: 40px;
 }
@@ -40,78 +72,21 @@
   }
 }
 
-.social-links {
-  font-size: 0;
-}
-
-.social-link {
-  display: inline-block;
-  margin-right: 6px;
-  font-size: 0;
-  width: 46px;
-  height: 48px;
-  background-color: $social-link-bg;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &--tw {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
-  &--fb {
-    background-image: url("../img/icon-facebook.svg");
-  }
-
-  &--yt {
-    background-image: url("../img/icon-youtube.svg");
-  }
-
-  &:hover {
-    background-color: $social-link-bg-hover;
-  }
-
-  &:active {
-    background-color: $social-link-bg-active;
-
-    &--tw {
-      background-image: url("../img/icon-twitter-alpha.svg");
-    }
-
-    &--fb {
-      background-image: url("../img/icon-facebook-alpha.svg");
-    }
-
-    &--yt {
-      background-image: url("../img/icon-youtube-alpha.svg");
-    }
-  }
-}
-
-.page-footer__copyright {
-  display: flex;
-  align-items: center;
-}
-
 .page-footer__copyright-text {
   text-transform: uppercase;
   margin-right: 10px;
 }
 
-.page-footer__copyright-link {
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/logo-htmlacademy.svg");
+.icon-html-academy {
+  width: 42px;
+  height: 42px;
+  fill: #000000;
 
   &:hover {
-    background-image: url("../img/logo-htmlacademy-hover.svg");
+    fill: #669ec0;
   }
 
   &:active {
-    background-image: url("../img/logo-htmlacademy-active.svg");
+    fill: #b2b2b2;
   }
-  
 }

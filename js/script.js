@@ -15,16 +15,18 @@ navToggle.addEventListener('click', function() {
 
 function initMap() {
   var mapOptions = {
-    zoom: 13,
-    center: {lat: 34.689968, lng: -111.761011},
+    zoom: 9,
+    center: {lat: 34.867633, lng: -111.762398},
     disableDefaultUI: true
   }
 
   var map = new google.maps.Map(document.querySelector('.map'), mapOptions);
-  var myLatLng = new google.maps.LatLng(34.689968, -111.761011);
+  var image = "img/icon-map-marker.svg";
+  var myLatLng = new google.maps.LatLng(34.867633, -111.762398);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
+    icon: image,
     animation: google.maps.Animation.DROP
   });
 }

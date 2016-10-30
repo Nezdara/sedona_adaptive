@@ -61,27 +61,12 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html-copy", function() {
-  gulp.src("*.html")
-  .pipe(gulp.dest('build'))
-  .pipe(server.reload({stream: true}));
-});
-
-gulp.task("js-copy", function() {
-  gulp.src("js/**/*.js")
-  .pipe(gulp.dest('build/js'))
-  .pipe(server.reload({stream: true}));
-});
-
 gulp.task("serve", function() {
   server.init({
-    server: "build",
-    notify: false,
-    open: true,
-    ui: false
+    server: "build"
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch('sass/**/*.scss', ["style"]);
   gulp.watch('*.html', function(obj) {
     if (obj.type === 'changed') {
       gulp.src( obj.path, { "base": "."})
